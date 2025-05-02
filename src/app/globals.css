@@ -2,5 +2,5 @@
 @import "tw-animate-css";
 
 body{
-  @apply bg-[#ffffff] text-gray-900;
+  @apply bg-[#161616] text-gray-900;
 }
