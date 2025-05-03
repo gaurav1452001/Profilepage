@@ -1,5 +1,8 @@
 "use client"
 import Navbar from "./_components/navbar";
+import React from "react";
+import { projectsList } from "@/lib/projects";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -23,7 +26,6 @@ export default function Home() {
                   <p className=" transition-colors">Visakhapatnam, Andhra Pradhesh, India</p>
                 </div>
               </div>
-
             </div>
           </div>
 
@@ -33,43 +35,34 @@ export default function Home() {
             <section className="mb-16">
               <h2 className="text-2xl font-bold mb-8 text-neutral-900">Projects</h2>
               <div className="space-y-8">
-                {/* Project Card */}
-                <div className="bg-white p-6 sm:p-8 rounded-xl shadow-sm border border-neutral-200 hover:border-neutral-300 transition-all duration-300 group">
-                  <h3 className="text-xl font-semibold mb-3 text-neutral-900 group-hover:text-neutral-700">Project Name</h3>
-                  <p className="text-neutral-600 mb-6 leading-relaxed">
-                    Description of the project and your role in it. Technologies used and key achievements.
-                  </p>
-                  <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-neutral-100 text-neutral-600 rounded-full text-sm font-medium hover:bg-neutral-200 transition-colors">React</span>
-                    <span className="px-3 py-1 bg-neutral-100 text-neutral-600 rounded-full text-sm font-medium hover:bg-neutral-200 transition-colors">TypeScript</span>
+                {projectsList.map((project) => (
+                  <div key={project.id} className="bg-white p-6 sm:p-8 rounded-xl shadow-sm border border-neutral-200 hover:border-neutral-300 transition-all duration-300 group">
+                    <div className="relative w-full h-64 mb-6 overflow-hidden rounded-lg">
+                      <Image
+                        src={project.imageUrl}
+                        alt={project.title}
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                    <h3 className="text-xl font-semibold mb-3 text-neutral-900 group-hover:text-neutral-700">
+                      {project.title}
+                    </h3>
+                    <p className="text-neutral-600 mb-6 leading-relaxed">
+                      {project.description}
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      {project.technologies.map((tech, index) => (
+                        <span
+                          key={index}
+                          className="px-3 py-1 bg-neutral-100 text-neutral-600 rounded-full text-sm font-medium hover:bg-neutral-200 transition-colors"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
                   </div>
-                </div>
-              </div>
-            </section>
-
-            {/* Experience Section */}
-            <section className="mb-16">
-              <h2 className="text-2xl font-bold mb-8 text-neutral-900">Experience</h2>
-              <div className="space-y-8">
-                {/* Experience Card */}
-                <div className="bg-white p-6 sm:p-8 rounded-xl shadow-sm border border-neutral-200 hover:border-neutral-300 transition-all duration-300">
-                  <h3 className="text-xl font-semibold mb-2 text-neutral-900">Company Name</h3>
-                  <p className="text-neutral-600 mb-4 font-medium">Position • Duration</p>
-                  <ul className="space-y-3 text-neutral-600">
-                    <li className="flex items-start">
-                      <span className="mr-2 text-neutral-400">•</span>
-                      <span>Key achievement or responsibility</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="mr-2 text-neutral-400">•</span>
-                      <span>Another notable accomplishment</span>
-                    </li>
-                    <li className="flex items-start">
-                      <span className="mr-2 text-neutral-400">•</span>
-                      <span>Technical contribution or project impact</span>
-                    </li>
-                  </ul>
-                </div>
+                ))}
               </div>
             </section>
           </div>
