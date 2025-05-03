@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <main className="px-16 py-5">
-      <Navbar />
+        <Navbar />
         <div className="flex flex-col lg:flex-row gap-8 mt-16">
           {/* Fixed Left Section */}
           <div className="lg:w-1/3 lg:fixed lg:max-w-sm">
@@ -14,7 +14,7 @@ export default function Home() {
                 Gaurav Kumar
               </div>
               <p className="leading-relaxed text-lg">
-                Hey there, I'm Gaurav. A young developer currently occupied with writing code and learning new stuff over the Internet. I also share all the books that I read and the writings that I have on the Internet. Not a lot of those, but I'm working on it.
+                Hey there, I&apos;m Gaurav. A young developer currently occupied with writing code and learning new stuff over the Internet. I also share all the books that I read and the writings that I have on the Internet. Not a lot of those, but I&apos;m working on it.
               </p>
               <div className="pt-6 border-t border-neutral-200">
                 <h2 className="text-xl font-semibold mb-4 ">Contact</h2>
@@ -23,7 +23,7 @@ export default function Home() {
                   <p className=" transition-colors">Visakhapatnam, Andhra Pradhesh, India</p>
                 </div>
               </div>
-              
+
             </div>
           </div>
 
