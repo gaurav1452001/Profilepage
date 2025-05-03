@@ -2,9 +2,7 @@
 import Link from 'next/link'
 import React from 'react'
 
-type Props = {}
-
-const Navbar = (props: Props) => {
+const Navbar = () => {
   return (
     <div className=' w-full flex justify-between items-center text-white sticky top-4 text-sm'>
       <div className='border-neutral-200 rounded-lg p-1 relative backdrop-blur-md bg-[#e1e0e0] shadow-md border'>
