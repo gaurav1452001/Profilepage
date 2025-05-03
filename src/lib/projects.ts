@@ -6,6 +6,8 @@ export const projectsList: Project[] = [
         title: "Sententia",
         description: "Sententia is a blogging platform which uses masonry grid layout of Pinterest with the traditional blogging approach of Medium, where authors can publish their writings.",
         technologies: ["React", "Node.js", "MongoDB", "Express", "Tailwind"],
+        livelink: "https://sententia-eight.vercel.app",
+        githublink: "https://github.com/gaurav1452001/Sententia",
         imageUrl: "/sententia.png"
     },
     {
@@ -13,6 +15,8 @@ export const projectsList: Project[] = [
         title: "Todo App",
         description: "Basic todo app using React and local storage for task management",
         technologies: ["Tailwind", "React"],
-        imageUrl: "/assets/project2.jpg"
+        livelink: "https://todo-lister-app.vercel.app",
+        githublink: "https://github.com/gaurav1452001/todo-app",
+        imageUrl: "/sententia_masonry.png"
     }
 ];

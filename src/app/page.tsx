@@ -1,8 +1,11 @@
 "use client"
 import Navbar from "./_components/navbar";
+import { ExternalLink } from 'lucide-react';
+import { Github } from 'lucide-react';
 import React from "react";
 import { projectsList } from "@/lib/projects";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -36,8 +39,9 @@ export default function Home() {
               <h2 className="text-2xl font-bold mb-8 text-neutral-900">Projects</h2>
               <div className="space-y-8">
                 {projectsList.map((project) => (
-                  <div key={project.id} className="bg-white p-6 sm:p-8 rounded-xl shadow-sm border border-neutral-200 hover:border-neutral-300 transition-all duration-300 group">
-                    <div className="relative w-full h-64 mb-6 overflow-hidden rounded-lg">
+                  <div key={project.id} className="bg-white p-4 sm:px-5 sm:py-8 rounded-xl shadow-sm border border-neutral-200 hover:border-neutral-300 transition-all duration-300 group flex flex-col md:flex-row gap-6">
+                    {/* Left side - Image */}
+                    <div className="relative w-full md:w-2/5 h-64 overflow-hidden rounded-lg flex-shrink-0">
                       <Image
                         src={project.imageUrl}
                         alt={project.title}
@@ -45,21 +49,44 @@ export default function Home() {
                         className="object-cover"
                       />
                     </div>
-                    <h3 className="text-xl font-semibold mb-3 text-neutral-900 group-hover:text-neutral-700">
-                      {project.title}
-                    </h3>
-                    <p className="text-neutral-600 mb-6 leading-relaxed">
-                      {project.description}
-                    </p>
-                    <div className="flex flex-wrap gap-2">
-                      {project.technologies.map((tech, index) => (
-                        <span
-                          key={index}
-                          className="px-3 py-1 bg-neutral-100 text-neutral-600 rounded-full text-sm font-medium hover:bg-neutral-200 transition-colors"
+
+                    {/* Right side - Project Info */}
+                    <div className="flex flex-col flex-grow">
+                      <h3 className="text-4xl font-semibold mb-3 text-neutral-900 group-hover:text-neutral-700">
+                        {project.title}
+                      </h3>
+                      <p className="text-neutral-600 mb-6 leading-relaxed flex-grow">
+                        {project.description}
+                      </p>
+
+                      <div className="flex gap-4 mb-4">
+                        <Link
+                          href={project.livelink}
+                          target="_blank"
+                          className="text-neutral-600 hover:text-neutral-900 transition-colors flex items-center gap-2"
                         >
-                          {tech}
-                        </span>
-                      ))}
+                        <ExternalLink className="h-5 w-5" />
+                          Live Demo
+                        </Link>
+                        <Link
+                          href={project.githublink}
+                          target="_blank"
+                          className="text-neutral-600 hover:text-neutral-900 transition-colors flex items-center gap-2"
+                        >
+                        <Github className="h-5 w-5" />
+                          Source Code
+                        </Link>
+                      </div>
+                      <div className="flex flex-wrap gap-2">
+                        {project.technologies.map((tech, index) => (
+                          <span
+                            key={index}
+                            className="px-3 py-1 bg-neutral-100 text-neutral-600 rounded-full text-sm font-medium hover:bg-neutral-200 transition-colors"
+                          >
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 ))}
