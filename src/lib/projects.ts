@@ -17,6 +17,42 @@ export const projectsList: Project[] = [
         technologies: ["Tailwind", "React"],
         livelink: "https://todo-lister-app.vercel.app",
         githublink: "https://github.com/gaurav1452001/todo-app",
-        imageUrl: "/sententia_masonry.png"
+        imageUrl: "/todo2.png"
+    },
+    {
+        id: 3,
+        title: "Sententia",
+        description: "Sententia is a blogging platform which uses masonry grid layout of Pinterest with the traditional blogging approach of Medium, where authors can publish their writings.",
+        technologies: ["React", "Node.js", "MongoDB", "Express", "Tailwind"],
+        livelink: "https://sententia-eight.vercel.app",
+        githublink: "https://github.com/gaurav1452001/Sententia",
+        imageUrl: "/sententia.png"
+    },
+    {
+        id: 4,
+        title: "Sententia",
+        description: "Sententia is a blogging platform which uses masonry grid layout of Pinterest with the traditional blogging approach of Medium, where authors can publish their writings.",
+        technologies: ["React", "Node.js", "MongoDB", "Express", "Tailwind"],
+        livelink: "https://sententia-eight.vercel.app",
+        githublink: "https://github.com/gaurav1452001/Sententia",
+        imageUrl: "/sententia.png"
+    },
+    {
+        id: 5,
+        title: "Sententia",
+        description: "Sententia is a blogging platform which uses masonry grid layout of Pinterest with the traditional blogging approach of Medium, where authors can publish their writings.",
+        technologies: ["React", "Node.js", "MongoDB", "Express", "Tailwind"],
+        livelink: "https://sententia-eight.vercel.app",
+        githublink: "https://github.com/gaurav1452001/Sententia",
+        imageUrl: "/sententia.png"
+    },
+    {
+        id: 6,
+        title: "Sententia",
+        description: "Sententia is a blogging platform which uses masonry grid layout of Pinterest with the traditional blogging approach of Medium, where authors can publish their writings.",
+        technologies: ["React", "Node.js", "MongoDB", "Express", "Tailwind"],
+        livelink: "https://sententia-eight.vercel.app",
+        githublink: "https://github.com/gaurav1452001/Sententia",
+        imageUrl: "/sententia.png"
     }
 ];
