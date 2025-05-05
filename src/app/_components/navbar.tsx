@@ -14,8 +14,7 @@ const Navbar = () => {
         <button className='text-neutral-600  hover:text-neutral-900 py-1 px-2 tracking-tight font-sans hover:bg-neutral-300 rounded-lg'><Link href="/">Reading</Link></button>
       </div>
       <div className='hidden md:flex gap-4 text-neutral-200'>
-        <Link href="https://github.com/gaurav1452001" target="_blank" >Github</Link>
-        <Link href="https://x.com/Gdotkumar145" target="_blank" >Twitter</Link>
+        
         <Link href="/" target="_blank">Resume</Link>
       </div>
 

@@ -2,14 +2,18 @@
 import Navbar from "./_components/navbar";
 import { ExternalLink } from 'lucide-react';
 import { Github } from 'lucide-react';
+import { Twitter } from 'lucide-react';
+import { Linkedin } from 'lucide-react';
 import React from "react";
 import { projectsList } from "@/lib/projects";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const router = useRouter()
   return (
     <>
-      <main className="px-4 md:px-16 py-5">
+      <main className="md:px-16 py-5">
         <Navbar />
         <div className="flex flex-col gap-8 mt-16">
           {/* Fixed Left Section */}
@@ -19,10 +23,15 @@ export default function Home() {
                 Gaurav Kumar
               </h1>
               <p className="leading-relaxed text-base sm:text-lg">
-                Hey, I&apos;m Gaurav. A young developer currently occupied with writing code and learning new stuff over the Internet. I also share all the books that I read and the writings that I have on the Internet. Not a lot of those, but I&apos;m working on it.
+                Currently occupied with writing code and learning new stuff over the Internet. I also share all the books that I read and the writings that I have on the Internet. Not a lot of those, but I&apos;m working on it.
               </p>
               <div className="pt-6 border-t border-neutral-200">
-                <h2 className="text-xl font-semibold mb-4">Contact</h2>
+                <h2 className="text-2xl font-semibold mb-4">Contact</h2>
+                <div className="flex flex-row items-center gap-4 mb-6">
+                  <Link href="https://github.com/gaurav1452001" target="_blank" ><Github className="w-7 hover:scale-110" /></Link>
+                  <Link href="https://x.com/Gdotkumar145" target="_blank" ><Twitter className="w-7 hover:scale-110" /></Link>
+                  <Link href="http://www.linkedin.com/in/gaurav-kumar-966a37251" target="_blank" ><Linkedin className="w-7 hover:scale-110" /></Link>
+                </div>
                 <div className="space-y-2">
                   <p className="transition-colors">gaurav1452001@gmail.com</p>
                   <p className="transition-colors">Visakhapatnam, Andhra Pradhesh, India</p>
@@ -51,10 +60,10 @@ export default function Home() {
 
                     {/* Right side - Project Info */}
                     <div className="flex flex-col flex-grow p-6">
-                      <h3 className="text-4xl font-semibold mb-3 text-neutral-900 group-hover:text-neutral-700">
+                      <h3 className="text-4xl font-semibold mb-3 text-neutral-900 group-hover:text-neutral-700 text-left">
                         {project.title}
                       </h3>
-                      <p className="text-neutral-600 mb-6 leading-relaxed flex-grow">
+                      <p className="text-neutral-600 mb-6 leading-relaxed flex-grow text-left">
                         {project.description}
                       </p>
 
