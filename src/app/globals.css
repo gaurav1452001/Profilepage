@@ -16,7 +16,7 @@
 
 body {
   @apply bg-[#161616] text-gray-900 min-h-screen;
-  background-image: url('/back.jpg');
+  background-image: url('/back2.webp');
   background-size: 120% 120%;
   background-position: center;
   background-repeat: no-repeat;
@@ -29,6 +29,6 @@ h1, h2, h3, h4, h5, h6 {
   @apply font-normal;
 }
 
-html {
+/* html {
   font-family: 'Inter', sans-serif;
-}
+} */
