@@ -11,7 +11,6 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <main className="md:px-16 py-5">
         <Navbar />
         <div className="flex flex-col gap-8 mt-16">
           {/* Fixed Left Section */}
@@ -100,7 +99,6 @@ export default function Home() {
             </section>
           </div>
         </div>
-      </main>
     </>
   );
 }
