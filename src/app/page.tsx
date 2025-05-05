@@ -4,7 +4,6 @@ import { ExternalLink } from 'lucide-react';
 import { Github } from 'lucide-react';
 import React from "react";
 import { projectsList } from "@/lib/projects";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {

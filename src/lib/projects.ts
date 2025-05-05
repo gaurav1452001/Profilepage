@@ -18,59 +18,5 @@ export const projectsList: Project[] = [
         livelink: "https://todo-lister-app.vercel.app",
         githublink: "https://github.com/gaurav1452001/todo-app",
         imageUrl: "/todo2.png"
-    },
-    {
-        id: 2,
-        title: "Todo App",
-        description: "Basic todo app using React and local storage for task management",
-        technologies: ["Tailwind", "React"],
-        livelink: "https://todo-lister-app.vercel.app",
-        githublink: "https://github.com/gaurav1452001/todo-app",
-        imageUrl: "/todo2.png"
-    },
-    {
-        id: 2,
-        title: "Todo App",
-        description: "Basic todo app using React and local storage for task management",
-        technologies: ["Tailwind", "React"],
-        livelink: "https://todo-lister-app.vercel.app",
-        githublink: "https://github.com/gaurav1452001/todo-app",
-        imageUrl: "/todo2.png"
-    },
-    {
-        id: 2,
-        title: "Todo App",
-        description: "Basic todo app using React and local storage for task management",
-        technologies: ["Tailwind", "React"],
-        livelink: "https://todo-lister-app.vercel.app",
-        githublink: "https://github.com/gaurav1452001/todo-app",
-        imageUrl: "/todo2.png"
-    },
-    {
-        id: 2,
-        title: "Todo App",
-        description: "Basic todo app using React and local storage for task management",
-        technologies: ["Tailwind", "React"],
-        livelink: "https://todo-lister-app.vercel.app",
-        githublink: "https://github.com/gaurav1452001/todo-app",
-        imageUrl: "/todo2.png"
-    },
-    {
-        id: 2,
-        title: "Todo App",
-        description: "Basic todo app using React and local storage for task management",
-        technologies: ["Tailwind", "React"],
-        livelink: "https://todo-lister-app.vercel.app",
-        githublink: "https://github.com/gaurav1452001/todo-app",
-        imageUrl: "/todo2.png"
-    },
-    {
-        id: 2,
-        title: "Todo App",
-        description: "Basic todo app using React and local storage for task management",
-        technologies: ["Tailwind", "React"],
-        livelink: "https://todo-lister-app.vercel.app",
-        githublink: "https://github.com/gaurav1452001/todo-app",
-        imageUrl: "/todo2.png"
     }
 ];
