@@ -7,10 +7,8 @@ import { Linkedin } from 'lucide-react';
 import React from "react";
 import { projectsList } from "@/lib/projects";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 
 export default function Home() {
-  const router = useRouter()
   return (
     <>
       <main className="md:px-16 py-5">
