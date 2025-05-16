@@ -49,7 +49,7 @@ export default function Home() {
             <h2 className="text-4xl font-bold mb-8 text-neutral-100 flex justify-center">Projects</h2>
             <div className="flex justify-center items-center gap-20 flex-wrap">
               {projectsList.map((project) => (
-                <div key={project.id} className="max-w-[90%] md:max-w-[40%] max-h-max pb-3 self-start text-center bg-white border-gray-700 rounded-lg">
+                <div key={project.id} className="max-w-[0%] md:max-w-[40%] max-h-max pb-3 self-start text-center bg-white border-gray-700 rounded-lg">
                   {/* Left side - Image */}
                   <div>
 
