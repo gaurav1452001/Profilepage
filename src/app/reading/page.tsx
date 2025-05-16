@@ -14,14 +14,14 @@ const ProjectsPage = () => {
         <header className="mb-24">
           <h1 className="text-4xl md:text-8xl font-bold text-white mb-6 font-serif">reading</h1>
           <p className="text-neutral-400 text-lg md:text-xl max-w-2xl leading-relaxed">
-            A collection of books I'm currently reading or have read. I don't read often, but I try to read what interests me the most.
+            A collection of books I&apos;m currently reading or have read. I don&apos;t read often, but I try to read what interests me the most.
           </p>
         </header>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {Readings.map((reading) => (
             <div
               key={reading.id}
-              className="group h-full w-full overflow-hidden rounded-lg bg-neutral-900 transition-colors focus-within:bg-neutral-950 hover:bg-neutral-950"
+              className="group h-full w-full overflow-hidden rounded-lg bg-neutral-900 transition-colors hover:bg-neutral-950"
             >
               <div className="flex gap-12 w-full flex-col justify-between h-full">
 
@@ -35,13 +35,13 @@ const ProjectsPage = () => {
                       <span>Read</span>
                     </div>
                   )}
-                  <a
+                  <Link
                     href={reading.link}
                     target="_blank"
-                    className="flex h-8 w-8 items-center justify-center rounded-full transition-colors focus-visible:ring-4 focus-visible:ring-blue-200 group-focus-within:bg-white group-focus-within:text-neutral-900 group-focus-within:shadow-skeuo cursor-alias group-hover:bg-white group-hover:text-neutral-900 group-hover:shadow-skeuo"
+                    className="flex h-8 w-8 items-center justify-center rounded-full transition-colors group-hover:bg-white group-hover:text-neutral-900 group-hover:shadow-skeuo"
                   >
                     <ArrowUpRight className="h-4 w-4" />
-                  </a>
+                  </Link>
                 </div>
 
                 <div className="grid grow grid-cols-2 items-end gap-6 px-7 pb-10">
@@ -50,7 +50,7 @@ const ProjectsPage = () => {
                     alt={reading.title}
                     width={300}
                     height={400}
-                    className="rounded shadow-lg transition-transform group-focus-within:-rotate-3 group-focus-within:scale-110 group-focus-within:shadow-xl group-hover:-rotate-3 group-hover:scale-110 group-hover:shadow-xl"
+                    className="rounded shadow-lg transition-transform group-hover:-rotate-3 group-hover:scale-110 group-hover:shadow-xl"
                   />
                   <div className="tracking-tight py-2">
 
