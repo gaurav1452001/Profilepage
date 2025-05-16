@@ -9,7 +9,7 @@ const ProjectsPage = () => {
     return (
         <div className="min-h-screen bg-[#111010]">
             <Navbar />
-            <main className="px-6 md:px-16 lg:px-24 py-16 max-w-6xl mx-auto">
+            <main className="px-6 md:px-10 lg:px-14 py-16  mx-auto">
                 <header className="mb-24">
                     <h1 className="text-4xl md:text-8xl font-bold text-white mb-6 font-serif">projects</h1>
                     <p className="text-neutral-400 text-lg md:text-xl max-w-2xl leading-relaxed">
