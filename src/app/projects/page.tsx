@@ -21,7 +21,7 @@ const ProjectsPage = () => {
                     {projectsList.map((project) => (
                         <div 
                             key={project.id} 
-                            className="group grid md:grid-cols-2 gap-12 items-center bg-neutral-900"
+                            className="group p-3.5 grid md:grid-cols-2 gap-12 items-center bg-neutral-900"
                         >
                             <div className="aspect-[4/3] relative overflow-hidden rounded-xl bg-neutral-900">
                                 <img
@@ -31,11 +31,11 @@ const ProjectsPage = () => {
                                 />
                             </div>
                             
-                            <div className="space-y-6 ">
-                                <h2 className="text-3xl font-semibold text-white font-serif">
+                            <div className="xl:space-y-6 ">
+                                <h2 className="text-lg lg:text-3xl font-semibold text-white font-serif">
                                     {project.title}
                                 </h2>
-                                <p className="text-neutral-400 leading-relaxed text-lg">
+                                <p className="text-neutral-400 leading-relaxed text-sm lg:text-lg">
                                     {project.description}
                                 </p>
                                 
@@ -43,14 +43,14 @@ const ProjectsPage = () => {
                                     {project.technologies.map((tech, index) => (
                                         <span 
                                             key={index}
-                                            className="px-4 py-1.5 bg-[#1c1b1b] text-neutral-400 text-sm rounded-full border border-neutral-800/50"
+                                            className="px-4 py-1.5 bg-[#1c1b1b] text-neutral-400 text-sm lg:text-lg rounded-full border border-neutral-800/50"
                                         >
                                             {tech}
                                         </span>
                                     ))}
                                 </div>
 
-                                <div className="flex gap-6 pt-8">
+                                <div className="flex gap-6 pt-3 md:pt-4 lg:pt-8 text-sm lg:text-lg">
                                     <Link 
                                         href={project.livelink} 
                                         target="_blank"

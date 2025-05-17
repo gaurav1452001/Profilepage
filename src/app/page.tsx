@@ -42,7 +42,9 @@ export default function Home() {
                 </button>
               </div>
               <div className="space-y-2">
-                <p className="transition-colors">gaurav1452001@gmail.com</p>
+                <p className="transition-colors">
+                  gaurav1452001@gmail.com
+                </p>
                 <p className="transition-colors">Visakhapatnam, Andhra Pradhesh, India</p>
               </div>
             </div>
