@@ -16,8 +16,8 @@ const ProjectsPage = () => {
           <p className="text-neutral-400 text-lg md:text-xl max-w-2xl leading-relaxed">
             A collection of books I&apos;m currently reading or have read. I have a stack of unfinished books and a plethora of bookmarks. Only reading what interests me the most.
           </p>
-          <button className='cursor-pointer mt-4 flex items-center gap-2 bg-neutral-900 text-white font-semibold px-4 py-2 rounded-lg hover:bg-neutral-800 transition duration-300'>
-            <a href="https://www.goodreads.com/user/show/76606606" target='_blank'>Check out Goodreads</a>
+          <button className='cursor-pointer mt-4 flex items-center gap-2 bg-neutral-800 text-neutral-200 font-semibold px-4 py-2 rounded-lg hover:bg-neutral-700 transition duration-300'>
+            <a href="https://www.goodreads.com/user/show/76606606" target='_blank'>Check out my Goodreads</a>
           </button>
         </header>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
