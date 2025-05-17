@@ -13,7 +13,7 @@ const ProjectsPage = () => {
                 <header className="mb-24">
                     <h1 className="text-4xl md:text-8xl font-bold text-white mb-6 font-serif">projects</h1>
                     <p className="text-neutral-400 text-lg md:text-xl max-w-2xl leading-relaxed">
-                        A collection of projects I&apos;ve built. Most of these were built for learning and fun.
+                        A collection of projects I&apos;ve built. Most of these were built for learning and fun. I dabble into different tech stacks for creation, to learn and understand different frameworks that are being used in current times.
                     </p>
                 </header>
 
