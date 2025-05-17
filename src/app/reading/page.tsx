@@ -14,8 +14,11 @@ const ProjectsPage = () => {
         <header className="mb-24">
           <h1 className="text-4xl md:text-8xl font-bold text-white mb-6 font-serif">reading</h1>
           <p className="text-neutral-400 text-lg md:text-xl max-w-2xl leading-relaxed">
-            A collection of books I&apos;m currently reading or have read. I don&apos;t read often, but I try to read what interests me the most.
+            A collection of books I&apos;m currently reading or have read. I have a stack of unfinished books and a plethora of bookmarks. Only reading what interests me the most.
           </p>
+          <button className='cursor-pointer mt-4 flex items-center gap-2 bg-neutral-900 text-white font-semibold px-4 py-2 rounded-lg hover:bg-neutral-800 transition duration-300'>
+            <a href="https://www.goodreads.com/user/show/76606606" target='_blank'>Check out Goodreads</a>
+          </button>
         </header>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {Readings.map((reading) => (
@@ -38,7 +41,7 @@ const ProjectsPage = () => {
                   <Link
                     href={reading.link}
                     target="_blank"
-                    className="flex h-8 w-8 items-center justify-center rounded-full transition-colors group-hover:bg-white group-hover:text-neutral-900 group-hover:shadow-skeuo"
+                    className="flex h-8 w-8 items-center justify-center rounded-full transition-colors group-hover:bg-white group-hover:text-neutral-900"
                   >
                     <ArrowUpRight className="h-4 w-4" />
                   </Link>

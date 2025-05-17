@@ -27,8 +27,15 @@ export default function Home() {
               <h2 className="text-2xl font-semibold mb-4">Contact</h2>
               <div className="flex flex-row items-center gap-4 mb-6">
                 <Link href="https://github.com/gaurav1452001" target="_blank" ><Github className="w-7 hover:scale-110 hover:bg-neutral-900 hover:shadow-[4px_4px_0px_0px_rgba(255,255,255,0.8)] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all duration-200" /></Link>
+
                 <Link href="https://x.com/Gdotkumar145" target="_blank" ><Twitter className="w-7 hover:scale-110 hover:bg-neutral-900 hover:shadow-[4px_4px_0px_0px_rgba(255,255,255,0.8)] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all duration-200" /></Link>
+
                 <Link href="http://www.linkedin.com/in/gaurav-kumar-966a37251" target="_blank" ><Linkedin className="w-7 hover:scale-110 hover:bg-neutral-900 hover:shadow-[4px_4px_0px_0px_rgba(255,255,255,0.8)] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all duration-200" /></Link>
+
+                <Link href="https://leetcode.com/u/gaurav1452001/" target="_blank">
+                  <img className=" invert w-7 hover:scale-110 hover:bg-neutral-100 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,0.8)] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all duration-200" width="48" height="48" src="https://img.icons8.com/external-tal-revivo-regular-tal-revivo/48/external-level-up-your-coding-skills-and-quickly-land-a-job-logo-regular-tal-revivo.png" alt="external-level-up-your-coding-skills-and-quickly-land-a-job-logo-regular-tal-revivo" />
+                </Link>
+
                 <button className="ml-7 gap-2 flex flex-row border-2 border-white px-3 font-semibold py-1 text-sm text-white rounded-2xl hover:bg-neutral-900 hover:shadow-[4px_4px_0px_0px_rgba(255,255,255,0.8)] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all duration-200">
                   <ArrowDownToLine className="w-4" />
                   <Link href="/">Resume</Link>
@@ -47,9 +54,9 @@ export default function Home() {
           {/* Projects Section */}
           <section className="mb-16">
             <h2 className="text-4xl font-bold mb-8 text-neutral-100 flex justify-center">Projects</h2>
-            <div className="flex justify-center items-center gap-20 flex-wrap">
+            <div className="flex justify-center  gap-20 flex-wrap">
               {projectsList.map((project) => (
-                <div key={project.id} className="max-w-[0%] md:max-w-[40%] max-h-max pb-3 self-start text-center bg-white border-gray-700 rounded-lg">
+                <div key={project.id} className="max-w-[90%] md:max-w-[40%] max-h-max pb-3 self-start text-center bg-white border-gray-700 rounded-lg">
                   {/* Left side - Image */}
                   <div>
 

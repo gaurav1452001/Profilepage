@@ -58,7 +58,7 @@ export const Readings: Reading[] = [
     },
     {
         id: 8,
-        title: "Brave New World",
+        title: "The Silent Coup",
         author: "Josy Joseph",
         imageUrl: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1629921975i/58856290.jpg",
         status: "Read",

@@ -21,7 +21,7 @@ const ProjectsPage = () => {
                     {projectsList.map((project) => (
                         <div 
                             key={project.id} 
-                            className="group grid md:grid-cols-2 gap-12 items-start"
+                            className="group grid md:grid-cols-2 gap-12 items-center bg-neutral-900"
                         >
                             <div className="aspect-[4/3] relative overflow-hidden rounded-xl bg-neutral-900">
                                 <img
@@ -31,7 +31,7 @@ const ProjectsPage = () => {
                                 />
                             </div>
                             
-                            <div className="space-y-6">
+                            <div className="space-y-6 ">
                                 <h2 className="text-3xl font-semibold text-white font-serif">
                                     {project.title}
                                 </h2>
