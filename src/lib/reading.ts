@@ -73,7 +73,7 @@ export const Readings: Reading[] = [
         link: "https://www.goodreads.com/book/show/31394111-a-feast-of-vultures"
     },
     {
-        id: 9,
+        id: 10,
         title: "Shakespeare: The World as Stage",
         author: "Bill Bryson",
         imageUrl: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1434075816i/135611.jpg",
