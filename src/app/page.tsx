@@ -9,8 +9,7 @@ import React from "react";
 import { projectsList } from "@/lib/projects";
 import Link from "next/link";
 import Image from "next/image";
-import UnicornScene from "unicornstudio-react";
-
+import UnicornScene from "unicornstudio-react/next";
 
 export default function Home() {
   return (
@@ -22,6 +21,8 @@ export default function Home() {
         <UnicornScene
           projectId="vg9tsFcELkEdynxtrh8O"
           placeholder="/back3.jpeg"
+          width="100%"
+          height="100%"
         />
       </div>
 

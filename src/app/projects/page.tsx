@@ -1,6 +1,5 @@
 "use client"
 import React from 'react'
-import UnicornScene from "unicornstudio-react/next";
 import Navbar from '../_components/navbar'
 import { projectsList } from "@/lib/projects"
 import Link from 'next/link'
