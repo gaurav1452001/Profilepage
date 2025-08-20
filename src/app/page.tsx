@@ -20,7 +20,7 @@ export default function Home() {
       <div className="fixed inset-0 -z-10 h-[110%]">
         <UnicornScene
           projectId="vg9tsFcELkEdynxtrh8O"
-          placeholder="/path/to/placeholder.jpg"
+          placeholder="/back3.jpeg"
         />
       </div>
 
