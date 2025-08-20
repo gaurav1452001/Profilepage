@@ -21,6 +21,8 @@ export interface Experience {
     id: number;
     companyName: string;
     role: string;
+    roleDescription:string,
+    technologies: string[];
     imageUrl: string;
     workPeriod: string;
     link: string;

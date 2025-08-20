@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import Navbar from '../_components/navbar'
-import { projectsList } from "@/lib/projects"
+import {experienceList} from "@/lib/experience"
 import Link from 'next/link'
 import { ArrowUpRight } from 'lucide-react'
 
@@ -19,30 +19,30 @@ const ExperiencePage = () => {
                 </header>
 
                 <div className="space-y-16">
-                    {projectsList.map((project) => (
+                    {experienceList.map((experience) => (
                         <div 
-                            key={project.id} 
+                            key={experience.id} 
                             className="group p-3.5 grid md:grid-cols-2 gap-12 items-center bg-neutral-900"
                         >
                             <div className="aspect-[4/3] relative overflow-hidden rounded-xl bg-neutral-900">
                                 <img
-                                    src={project.imageUrl}
-                                    alt={project.title}
+                                    src={experience.imageUrl}
+                                    alt={experience.companyName}
                                     className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-700 ease-out"
                                 />
                             </div>
                             
                             <div className="xl:space-y-6 ">
                                 <h2 className="text-lg lg:text-3xl font-semibold text-white font-serif">
-                                    {project.title}
+                                    {experience.role}
                                 </h2>
                                 <p className="text-neutral-400 leading-relaxed text-sm lg:text-lg">
-                                    {project.description}
+                                    {experience.roleDescription}
                                 </p>
                                 
                                 <div className="flex flex-wrap gap-3 pt-2">
-                                    {project.technologies.map((tech, index) => (
-                                        <span 
+                                    {experience.technologies.map((tech, index) => (
+                                        <span
                                             key={index}
                                             className="px-4 py-1.5 bg-[#1c1b1b] text-neutral-400 text-sm lg:text-lg rounded-full border border-neutral-800/50"
                                         >
@@ -53,19 +53,11 @@ const ExperiencePage = () => {
 
                                 <div className="flex gap-6 pt-3 md:pt-4 lg:pt-8 text-sm lg:text-lg">
                                     <Link 
-                                        href={project.livelink} 
+                                        href={experience.link} 
                                         target="_blank"
                                         className="group/link inline-flex items-center gap-1 text-white font-medium"
                                     >
                                         Visit site 
-                                        <ArrowUpRight className="w-5 h-5 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform" />
-                                    </Link>
-                                    <Link 
-                                        href={project.githublink} 
-                                        target="_blank"
-                                        className="group/link inline-flex items-center gap-1 text-white font-medium"
-                                    >
-                                        View source 
                                         <ArrowUpRight className="w-5 h-5 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform" />
                                     </Link>
                                 </div>
