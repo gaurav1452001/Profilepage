@@ -9,7 +9,8 @@ import React from "react";
 import { projectsList } from "@/lib/projects";
 import Link from "next/link";
 import Image from "next/image";
-import { UnicornScene } from "unicornstudio-react/next";
+import UnicornScene from "unicornstudio-react";
+
 
 export default function Home() {
   return (
