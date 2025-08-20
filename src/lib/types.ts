@@ -16,3 +16,12 @@ export interface Reading {
     status: string;
     link: string;
 }
+
+export interface Experience {
+    id: number;
+    companyName: string;
+    role: string;
+    imageUrl: string;
+    workPeriod: string;
+    link: string;
+}

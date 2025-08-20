@@ -1,6 +1,6 @@
 "use client"
 import Navbar from "./_components/navbar";
-import { ExternalLink } from 'lucide-react';
+import { ExternalLink, MapPin } from 'lucide-react';
 import { Github } from 'lucide-react';
 import { Twitter } from 'lucide-react';
 import { Linkedin } from 'lucide-react';
@@ -9,24 +9,22 @@ import React from "react";
 import { projectsList } from "@/lib/projects";
 import Link from "next/link";
 import Image from "next/image";
+import { Mail } from 'lucide-react';
 import UnicornScene from "unicornstudio-react/next";
 
 export default function Home() {
   return (
     <>
       <Navbar />
-
       {/* Static Background UnicornScene */}
-      <div className="fixed inset-0 -z-10 h-[110%]">
+      <div className="fixed inset-0 -z-10 h-[120%]">
         <UnicornScene
           projectId="vg9tsFcELkEdynxtrh8O"
           placeholder="/back3.jpeg"
-          width="100%"
-          height="100%"
         />
       </div>
 
-      <div className="flex flex-col gap-8 mt-16 md:px-7">
+      <div className="flex flex-col gap-8 mt-5 md:mt-16 md:px-7">
         {/* Removed UnicornScene from here */}
         {/* Fixed Left Section */}
         <div className="px-6 sm:px-16 md:px-24">
@@ -34,8 +32,8 @@ export default function Home() {
             <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold">
               Hey, I&apos;m Gaurav Kumar
             </h1>
-            <p className="leading-relaxed text-base sm:text-lg">
-              Web and Mobile Developer currently occupied with writing code and building new stuff over the Internet. Always eager to work and commit to learning more and better. I also share all the books that I have read, music that I listen to and writings that I have on the Internet. Not a lot of those, but I&apos;m working on it.
+            <p className="leading-relaxed text-base sm:text-lg font-mono">
+              A Web/Mobile App Developer. Currently occupied with writing code and building new stuff over the Internet. Always eager to work and commit to learning more and better. I also share all the books that I have read, music that I listen to and writings that I have on the Internet. Currently open to work.
             </p>
             <div className="pt-6 border-t border-neutral-200">
               <h2 className="text-2xl font-semibold mb-4">Contact: +91 8709950990</h2>
@@ -56,10 +54,21 @@ export default function Home() {
                 </button>
               </div>
               <div className="space-y-2">
-                <p className="transition-colors">
+                <span className="flex items-center flex-row gap-3">
+                  <a href="mailto:gaurav1452001@gmail.com" target="_blank">
+                    <Mail />
+                  </a>
                   gaurav1452001@gmail.com
-                </p>
-                <p className="transition-colors">Visakhapatnam, Andhra Pradhesh, India</p>
+                </span>
+                <span className="flex items-center flex-row gap-3">
+                  <a
+                    href="https://www.google.com/maps?q=17.7816544,83.3748851" // Example: Delhi coordinates
+                    target="_blank"
+                  >
+                    <MapPin />
+                  </a>
+                  Visakhapatnam, Andhra Pradhesh, India
+                </span>
               </div>
             </div>
           </div>
